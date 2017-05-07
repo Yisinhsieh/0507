@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 600px;
+            height: 400px;
+            background-color: #50bcff;/*可用性極高，一定要有一塊滿版的高度*/
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .contaoner::before{
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+            text-align: center;
+        }
+        .box{
+            display: inline-block;
+            vertical-align: middle;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab necessitatibus asperiores, beatae velit quibusdam quam enim quo at in hic inventore architecto accusantium quas ut nesciunt reprehenderit, natus facilis eaque?
+            </p>
+        </div>
+        
+    </div>
+</body>
+</html>
